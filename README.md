@@ -1,16 +1,17 @@
-# levinenquestiontest
+# WineGPT
 
-A new Flutter project.
+A small application to feature chat gpt sdk integration in a Flutter app.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Add you OpenAI API in the services/chatgpt_service.dart file.
 
-A few resources to get you started if this is your first Flutter project:
+You can change the current prompt, as for now it just set the category selected inside the prompt to generate a question of this category. Feel free to change the language and topics.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+In order to generate an API Key for OpenAI go to https://platform.openai.com/
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Prompting for dev purpose
+
+We asked ChatGPT to format the output of his answer so we can directly use it in our code:
+
+> using the following format: {"question": "text", "choices": ["A", "B", "C", "D"], "answer": index, "explanation": "text"}'
